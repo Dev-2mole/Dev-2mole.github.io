@@ -1,4 +1,10 @@
 # Footer navigation links
 
-- title:
-  url:
+- title: BaekJoon
+  url:  /baekjoon/
+
+- title: "테스트용"
+  url:  /testing/
+
+- title: "대외활동"
+  url:  /activity/
