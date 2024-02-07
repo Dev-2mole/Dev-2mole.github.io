@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title: "Dev-2mole_tester"
-description: "where is comment?"
+description: "for my record page"
 logo: my_logo.jpg # 120x120 px default image used for Twitter summary card
 teaser: my_logo.jpg # 400x250 px default teaser image used in image archive grid
 locale: en

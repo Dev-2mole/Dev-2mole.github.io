@@ -1,6 +1,16 @@
 # Site navigation links
 
-- title:
-  url:
-  excerpt:
-  image:
+- title: BaekJoon
+  url:  /baekjoon/
+  excerpt:  "Dev-2mole solved backjoon problem"
+  image:  
+
+- title: "테스트용"
+  url:  /testing/
+  excerpt:  "Dev-2mole's testing page"
+  image:  my_logo.jpg
+
+- title: "대외활동"
+  url:  /activity/
+  excerpt:  "Dev-2mole's international activity"
+  image:  bio-photo.jpg
