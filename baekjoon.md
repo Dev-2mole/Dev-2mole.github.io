@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: BAEKJOON
-permalink: /baekjoon/
+permalink: /BAEKJOON/
 ---
 <div class="tiles">
 {% for post in site.posts %}
