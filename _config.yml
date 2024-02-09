@@ -4,7 +4,7 @@ title: "Dev-2mole"
 description: "for my record page"
 logo: my_logo.jpg # 120x120 px default image used for Twitter summary card
 teaser: my_logo.jpg # 400x250 px default teaser image used in image archive grid
-locale: en
+locale: kr
 url:  https://Dev-2mole.github.io
 feed:
   path: atom.xml
