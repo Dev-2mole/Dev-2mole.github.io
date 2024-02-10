@@ -132,14 +132,23 @@
       position: absolute;
       left: 0;
       margin-bottom: 0;
-      width: 50px;
       border: 2px solid $white;
       margin-bottom: ($gutter / 2);
       opacity: 0.6;
-      @include media($small) {
-        width: 150px;
+    
+      // 소형 장치용 기본 스타일
+      width: 50px; // 소형 장치에서 적용될 기본 너비
+    
+      // 중형 장치 (태블릿) 뷰포트에 대한 스타일
+      @media (min-width: 768px) {
+        width: 75px; // 태블릿에서 적용될 너비
       }
-    }
+    
+      // 대형 장치 (데스크톱) 뷰포트에 대한 스타일
+      @media (min-width: 992px) {
+        width: 100px; // 데스크톱에서 적용될 너비
+      }
+    }    
     a:hover .teaser {
       opacity: 1;
     }
