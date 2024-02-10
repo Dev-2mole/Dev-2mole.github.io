@@ -3,14 +3,14 @@
 - title: BAEKJOON
   url:  /BAEKJOON/
   excerpt:  "Dev-2mole solved backjoon problem"
-  image:  "/images/favicon.ico/apple-icon-76x76.png"
+  image:  "favicon.ico/apple-icon-76x76.png"
 
 - title: "테스트용"
   url:  /testing/
   excerpt:  "Dev-2mole's testing page"
-  image:  "/images/favicon.ico/apple-icon-72x72.png"
+  image:  "favicon.ico/apple-icon-72x72.png"
 
 - title: "대외활동"
   url:  /activity/
   excerpt:  "Dev-2mole's international activity"
-  image:  "/images/favicon.ico/apple-icon-114x114.png"
+  image:  "favicon.ico/apple-icon-114x114.png"
