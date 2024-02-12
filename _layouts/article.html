@@ -4,10 +4,6 @@ layout: default
 
 <div id="main" role="main">
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
-		<div class="toc">
-			<a href="#">&lt;맨 위로&gt;</a>
-			{% include toc.html html=content %}
-		  </div>
 		{% if page.image.feature %}
 		<div class="page-feature">
 			<div class="page-image">
@@ -34,6 +30,10 @@ layout: default
 				</aside>
 			</div><!-- /.content -->
 		</div><!-- /.inner-wrap -->
+		<div class="toc">
+			<a href="#">&lt;맨 위로&gt;</a>
+			{% include toc.html html=content %}
+		  </div>
 		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
 	</article><!-- ./wrap -->
 </div><!-- /#main -->
@@ -54,7 +54,7 @@ layout: default
 	  return headerNodes;
 	}
   
-	var title = document.getElementsByClassName("post-title")[0];
+	var title = document.getElementsByClassName("inner-wrap")[0];
 	var titleY = window.pageYOffset + title.getBoundingClientRect().top;
 	
 	var article = document.getElementsByClassName("wrap")[0];
