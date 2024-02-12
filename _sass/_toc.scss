@@ -50,7 +50,7 @@
   //     color: $text-color;
   //   }
   // }
-  position:fixed;
+  position: static;
   right: 0px;
   width: 240px;
   color: $text-color;
@@ -81,8 +81,8 @@
   a.toc-active {
     font-weight: bold; 
     transition: all 0.125s ease-in 0s; 
-    font-size: 0.75rem;
-    color: #9075aa;
+    font-size: 1.00rem;
+    color: #da1414;
   }
 
   ul {
