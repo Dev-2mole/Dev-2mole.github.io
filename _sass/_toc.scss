@@ -53,7 +53,7 @@
   position: absolute;
   right: 0px;
   width: 240px;
-  color: $default;
+  color: $text-color;
   overflow-y: auto;
   overflow-x: hidden;
   padding-left: 0.75rem;
@@ -95,7 +95,7 @@
   }
 
   a {
-      color: $default;
+      color: $text-color;
       text-decoration: none;
   }
  
