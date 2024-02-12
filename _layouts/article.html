@@ -87,10 +87,10 @@ layout: default
 		if (current.length > 0) {
 			current = current[current.length-1];
 
-			var currentA = tocNodes.filter(function(tocNode) {
+			var currentA = tocNodes.filter(function(tocNodes) {
 			// 매칭되는 TOC 항목 로깅
-			console.log("Matching TOC node innerHTML with current section:", tocNode.innerHTML);
-			return tocNode.innerHTML == current.innerHTML;
+			console.log("Matching TOC node innerHTML with current section:", tocNodes.innerHTML);
+			return tocNodes.innerHTML == current.innerHTML;
 			});
 			
 			currentA = currentA[0];
