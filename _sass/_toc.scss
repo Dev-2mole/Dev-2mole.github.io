@@ -50,28 +50,6 @@
       color: $text-color;
     }
   }
-}
-
-/*
-   1/4 wide table of contents to be used as a sidebar (left aligned)
-   ========================================================================== */
-
-.toc-left {
-  @include span-columns(12);
-  @include media($medium) {
-    @include span-columns(4);
-  }
-  margin-left: 0;
-  ul {
-    margin-top: 0;
-    @include media($small) {
-      margin-bottom: 0.5 * $gutter;
-    }
-  }
-}
-
-
-.toc {
   position: absolute;
   right: 0px;
   width: 240px;
@@ -123,5 +101,23 @@
  
   a:hover {
      color:$theme-color;
+  }
+}
+
+/*
+   1/4 wide table of contents to be used as a sidebar (left aligned)
+   ========================================================================== */
+
+.toc-left {
+  @include span-columns(12);
+  @include media($medium) {
+    @include span-columns(4);
+  }
+  margin-left: 0;
+  ul {
+    margin-top: 0;
+    @include media($small) {
+      margin-bottom: 0.5 * $gutter;
+    }
   }
 }
