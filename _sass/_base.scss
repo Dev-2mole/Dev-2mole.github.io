@@ -34,7 +34,7 @@ body {
   .container {
 	max-width: 28rem;
 	a {
-	  @if $theme-color != $default { color: $theme-color; }
+	  @if $text-color != $default { color: $text-color; }
 	}
   }
   @media (min-width: 38em) {
