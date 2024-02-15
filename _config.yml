@@ -4,7 +4,7 @@ title: "Dev-2mole"
 description: "for my record page"
 logo: /images/my_logo.jpg # 120x120 px default image used for Twitter summary card
 teaser: /images/my_logo.jpg # 400x250 px default teaser image used in image archive grid
-locale: kr
+locale: en
 url:  https://Dev-2mole.github.io
 feed:
   path: atom.xml
@@ -28,7 +28,7 @@ plugins:
 owner:
   name: 두지수(2mole)
   email: 2mole@kakao.com
-  twitter:
+  github: https://github.com/Dev-2mole
   google:
     ad-client:
     ad-slot:
