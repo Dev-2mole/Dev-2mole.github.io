@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div id="main" role="main">
-	<div class="toc">
-		<a href="#">&lt;맨 위로&gt;</a>
-		{% include toc.html html=content %}
-	</div>
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		<div class="toc">
+			<a href="#">&lt;맨 위로&gt;</a>
+			{% include toc.html html=content %}
+		</div>
 		{% if page.image.feature %}
 		<div class="page-feature">
 			<div class="page-image">
