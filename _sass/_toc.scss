@@ -50,12 +50,12 @@
   //     color: $text-color;
   //   }
   // }
-  position: absolute;
+  position: sticky;
+  top: 0; // Adjust this value as needed to provide some top margin
   right: 0px;
-  width: 240px;
+  width: 240px; // Or adjust as necessary
   color: $text-color;
   overflow-y: auto;
-  overflow-x: hidden;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.25rem;
@@ -66,7 +66,7 @@
 
   display: none;
   @media (min-width: 75em){
-    width: 240px;
+    // width: 240px;
     display: block;
   }
   @media (min-width: 85em){
