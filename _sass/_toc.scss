@@ -1,5 +1,4 @@
 #main {
-  display: flex;
   justify-content: space-between;
 }
 .toc {
@@ -53,7 +52,6 @@
   right: 0;
   width: 240px; // 필요에 따라 조정
   color: $text-color;
-  max-height: 500px; 
   overflow-y: auto; // 내용이 넘칠 경우 스크롤바 표시
   padding-left: 0.75rem;
   padding-right: 0.75rem;
