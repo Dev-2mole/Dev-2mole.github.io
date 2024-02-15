@@ -3,10 +3,7 @@ layout: default
 ---
 
 <div id="main" role="main">
-	<div class="toc">
-		<a href="#">&lt;맨 위로&gt;</a>
-		{% include toc.html html=content %}
-	</div>
+	
 	<div class="content-wrapper" style="display: flex;">
 		<article class="wrap" itemscope itemtype="http://schema.org/Article">
 			{% if page.image.feature %}
@@ -34,6 +31,10 @@ layout: default
 						{% if page.comments == true %}{% include comments.html %}{% endif %}
 					</aside>
 				</div><!-- /.content -->
+				<div class="toc">
+					<a href="#">&lt;맨 위로&gt;</a>
+					{% include toc.html html=content %}
+				</div>
 			</div><!-- /.inner-wrap -->
 			
 			{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
