@@ -53,7 +53,8 @@
   right: 0;
   width: 240px; // 필요에 따라 조정
   color: $text-color;
-  overflow-y: auto;
+  max-height: 90vh; // 뷰포트 높이의 90%로 최대 높이 제한
+  overflow-y: auto; // 내용이 넘칠 경우 스크롤바 표시
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.25rem;
