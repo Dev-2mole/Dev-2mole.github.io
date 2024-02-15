@@ -80,9 +80,12 @@
 
   a.toc-active {
     font-weight: bold; 
-    transition: all 0.125s ease-in 0s; 
-    font-size: 1.00rem;
-    color: #da1414;
+    transition: all 0.3s ease-in-out; // Smooth transition for visual effect
+    font-size: 1.00rem; // Adjusted font size if needed
+    color: #da1414; // Make the color more prominent or adjust as needed
+    background-color: #f0f0f0; // Added background color for better visibility
+    padding-left: 10px; // Increase padding for emphasis
+    border-left: 4px solid #da1414; // Make the border thicker or adjust color
   }
 
   ul {
