@@ -1,11 +1,7 @@
-/* ==========================================================================
-   Table of contents
-   ========================================================================== */
-
-/*
-   Page table of contents
-   ========================================================================== */
-
+#main {
+  display: flex;
+  justify-content: space-between;
+}
 .toc {
   // margin-left: -1 * $gutter;
   // margin-right: -1 * $gutter;
@@ -54,7 +50,7 @@
   position: sticky;
   top: 0; /* 필요에 따라 이 값을 조정하세요. 예: top: 20px; */
   z-index: 1000;
-  right: 0px;
+  right: 0;
   width: 240px; // 필요에 따라 조정
   color: $text-color;
   overflow-y: auto;
