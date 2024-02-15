@@ -4,10 +4,6 @@ layout: default
 
 <div id="main" role="main">
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
-		<div class="toc">
-			<a href="#">&lt;맨 위로&gt;</a>
-			{% include toc.html html=content %}
-		</div>
 		{% if page.image.feature %}
 		<div class="page-feature">
 			<div class="page-image">
@@ -16,6 +12,10 @@ layout: default
 			</div><!-- /.page-image -->
 		</div><!-- /.page-feature -->
 		{% endif %}
+		<div class="toc">
+			<a href="#">&lt;맨 위로&gt;</a>
+			{% include toc.html html=content %}
+		</div>
 		{% include breadcrumbs.html %}
 		<div class="page-title">
 			<h1>{{ page.title }}</h1>
