@@ -1,8 +1,11 @@
-#main {
+.content-wrapper {
   display: flex;
   justify-content: space-between;
 }
-.toc {
+
+#main-content, .toc {
+  flex: 1; /* 필요에 따라 조정 */
+
   // margin-left: -1 * $gutter;
   // margin-right: -1 * $gutter;
   // @include media($medium) {
