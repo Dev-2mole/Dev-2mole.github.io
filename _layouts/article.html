@@ -3,6 +3,10 @@ layout: default
 ---
 
 <div id="main" role="main">
+	<div class="toc">
+		<a href="#">&lt;맨 위로&gt;</a>
+		{% include toc.html html=content %}
+	</div>
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
 		{% if page.image.feature %}
 		<div class="page-feature">
@@ -30,10 +34,7 @@ layout: default
 				</aside>
 			</div><!-- /.content -->
 		</div><!-- /.inner-wrap -->
-		<div class="toc">
-			<a href="#">&lt;맨 위로&gt;</a>
-			{% include toc.html html=content %}
-		</div>
+		
 		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
 	</article><!-- ./wrap -->
 </div><!-- /#main -->
