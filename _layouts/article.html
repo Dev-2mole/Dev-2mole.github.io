@@ -69,12 +69,12 @@ layout: default
 	var before = undefined;
   
 	document.addEventListener('scroll', function(e) {
-    // if (window.scrollY >= articleY-60) {
-    //   toc.style.cssText = "position: fixed; top: 60px;";
-    // }
-    // else {
-    //   toc.style.cssText = "";
-    // }
+    if (window.scrollY >= articleY-60) {
+      toc.style.cssText = "position: fixed; top: 60px;";
+    }
+    else {
+      toc.style.cssText = "";
+    }
 
     var current = headerNodes.filter(function(header) {
       var headerY = window.pageYOffset + header.getBoundingClientRect().top;
