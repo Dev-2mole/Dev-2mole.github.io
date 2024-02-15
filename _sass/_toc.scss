@@ -50,8 +50,11 @@
   //     color: $text-color;
   //   }
   // }
+  position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0; // Adjust this value as needed to provide some top margin
+  top: 0; /* Adjust this value as needed, e.g., top: 20px; */
+  // Ensure there's a z-index if needed
+  z-index: 1000;
   right: 0px;
   width: 240px; // Or adjust as necessary
   color: $text-color;
@@ -98,12 +101,12 @@
   }
 
   a {
-      color: $text-color;
+      color: #10dddd;
       text-decoration: none;
   }
  
   a:hover {
-     color:$table-stripe-color;
+     color:#05da33;
   }
 }
 
