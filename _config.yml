@@ -25,7 +25,7 @@ plugins:
 
 
 # Site owner
-owner: 2mole
+owner:
   name: 2mole
   email: 2mole@kakao.com
   twitter:
