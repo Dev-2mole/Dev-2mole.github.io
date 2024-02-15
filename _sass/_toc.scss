@@ -52,11 +52,10 @@
   // }
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0; /* Adjust this value as needed, e.g., top: 20px; */
-  // Ensure there's a z-index if needed
+  top: 0; /* 필요에 따라 이 값을 조정하세요. 예: top: 20px; */
   z-index: 1000;
   right: 0px;
-  width: 240px; // Or adjust as necessary
+  width: 240px; // 필요에 따라 조정
   color: $text-color;
   overflow-y: auto;
   padding-left: 0.75rem;
@@ -67,6 +66,7 @@
   font-size: 0.7rem;
   border-left: 2px solid #e0d9e7;
 
+  
   display: none;
   @media (min-width: 75em){
     // width: 240px;
