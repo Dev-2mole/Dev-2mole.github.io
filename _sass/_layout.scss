@@ -327,12 +327,16 @@
 .author-bio {
 	margin-top: 0;
 	@include font-size(16);
+	margin-bottom: 0;
 }
 .other_social {
-	margin-top: 5;
+	margin-top: 10;
 	@include font-size(14);
 }
 
+.utterances {
+	max-width: 100% !important;
+  }
 /*
    Site footer
    ========================================================================== */
