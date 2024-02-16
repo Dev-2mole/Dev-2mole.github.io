@@ -328,6 +328,10 @@
 	margin-top: 0;
 	@include font-size(16);
 }
+.other_social {
+	margin-top: 10;
+	@include font-size(14);
+}
 
 /*
    Site footer
