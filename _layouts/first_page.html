@@ -2,23 +2,55 @@
 layout: default
 ---
 
-<div id="main" role="main">			
-	<div class="wrap">
-        <!-- 왼쪽 구역 추가 시작 -->
-        <div class="left-area" style="float: left; width: 300px; margin-right: 20px;">
-            <img src="{{ site.url }}/images/{{ page.image.profile }}" alt="Profile Image" style="width: 100%; border-radius: 50%;">
-            <h3>두지수</h3>
-            <p>현재 메인 페이지 코드 수정중 / 테스트 중 입니다.</p>
-        </div>
-        <!-- 왼쪽 구역 추가 끝 -->
-		<div class="page-title">
-			<h1>{{ page.title }}</h1>
-			{% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
-		</div>
-		<div class="archive-wrap">
-			<div class="page-content">
-				{{ content }}
-			</div><!-- /.page-content -->
-		</div><!-- /.archive-wrap -->
-	</div><!-- /.wrap -->
+<style>
+  .wrap {
+    display: flex;
+    border-left: 2px dashed #ccc; /* 나머지 영역과 구분하는 실선 */
+  }
+  .left-area {
+    flex: 0 0 300px; /* flex-grow, flex-shrink, flex-basis */
+    margin-right: 20px; /* 오른쪽 영역과의 간격 */
+    padding: 10px;
+    border-right: 2px dashed #ccc; /* 왼쪽 영역과 나머지 영역을 구분 */
+  }
+  .left-area img {
+    width: 100%; 
+    border-radius: 50%; /* 이미지를 원형으로 */
+    display: block; /* 이미지를 블록 요소로 만들어 margin을 적용 가능하게 함 */
+    margin-bottom: 10px; /* 이미지와 이름 사이의 간격 */
+  }
+  .left-area h3, .left-area p {
+    text-align: center; /* 이름과 설명을 중앙 정렬 */
+    margin: 5px 0; /* 상하 간격 */
+  }
+  .content-area {
+    flex: 1; /* 남은 공간을 모두 차지 */
+    padding: 10px;
+  }
+</style>
+
+<div id="main" role="main">         
+  <div class="wrap">
+    <!-- 왼쪽 구역 시작 -->
+    <div class="left-area">
+      <img src="{{ site.url }}/images/{{ page.image.profile }}" alt="Profile Image">
+      <h3>두지수</h3>
+      <p>안녕하세요 반갑습니다. 테스트중입니다.</p>
+    </div>
+    <!-- 왼쪽 구역 끝 -->
+
+    <!-- 나머지 콘텐츠 영역 시작 -->
+    <div class="content-area">
+      <div class="page-title">
+        <h1>{{ page.title }}</h1>
+        {% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
+      </div>
+      <div class="archive-wrap">
+        <div class="page-content">
+          {{ content }}
+        </div><!-- /.page-content -->
+      </div><!-- /.archive-wrap -->
+    </div>
+    <!-- 나머지 콘텐츠 영역 끝 -->
+  </div><!-- /.wrap -->
 </div><!-- /#main -->
