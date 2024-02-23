@@ -3,7 +3,7 @@ layout: first_page
 permalink: /
 title: "ALL POSTS"
 image:
-  profile: "2mole_profile_img.png"
+  profile: "2mole_profile_img.jpg"
 ---
 
 <div class="tiles">
