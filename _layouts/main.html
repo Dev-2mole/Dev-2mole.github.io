@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div id="main" role="main">			
+	<div class="wrap">
+        <!-- 왼쪽 구역 추가 시작 -->
+        <div class="left-area" style="float: left; width: 300px; margin-right: 20px;">
+            <img src="{{ site.url }}/images/{{ page.image.profile }}" alt="Profile Image" style="width: 100%; border-radius: 50%;">
+            <h3>두지수</h3>
+            <p>현재 메인 페이지 코드 수정중 / 테스트 중 입니다.</p>
+        </div>
+        <!-- 왼쪽 구역 추가 끝 -->
+		<div class="page-title">
+			<h1>{{ page.title }}</h1>
+			{% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
+		</div>
+		<div class="archive-wrap">
+			<div class="page-content">
+				{{ content }}
+			</div><!-- /.page-content -->
+		</div><!-- /.archive-wrap -->
+	</div><!-- /.wrap -->
+</div><!-- /#main -->

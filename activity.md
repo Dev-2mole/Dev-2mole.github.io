@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: activity
+title: "대외활동"
 permalink: /activity/
 ---
 <div class="tiles">
