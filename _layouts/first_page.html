@@ -3,38 +3,51 @@ layout: default
 ---
 
 <style>
-  .wrap {
-    display: flex;
-  }
-  .left-area {
-    flex: 0 0 300px; /* flex-grow, flex-shrink, flex-basis */
-    margin-right: 20px; /* 오른쪽 영역과의 간격 */
-    padding: 10px;
-    border-right: 2px solid #ccc; /* 오른쪽에 일반 선으로 구분 */
-  }
-  .left-area img {
-    width: 100%; 
-    border-radius: 50%; /* 이미지를 원형으로 */
-    display: block; /* 이미지를 블록 요소로 만들어 margin을 적용 가능하게 함 */
-    margin-bottom: 10px; /* 이미지와 이름 사이의 간격 */
-  }
-  .left-area h3, .left-area p {
-    text-align: center; /* 이름과 설명을 중앙 정렬 */
-    margin: 5px 0; /* 상하 간격 */
-  }
-  .content-area {
-    flex: 1; /* 남은 공간을 모두 차지 */
-    padding: 10px;
-  }
-</style>
+	.wrap {
+	  display: flex;
+	  width: 100%;
+	}
+  
+	.left-area {
+	  flex: 0 0 300px; /* 고정된 너비 */
+	  margin-right: 20px; /* 오른쪽 콘텐츠와의 간격 */
+	  padding: 10px;
+	  border-right: 2px solid #ccc; /* 오른쪽에 일반 선으로 구분 */
+	}
+  
+	.left-area img {
+	  width: 100%; 
+	  border-radius: 50%; /* 이미지를 원형으로 */
+	  display: block; /* 이미지를 블록 요소로 만들어 margin을 적용 가능하게 함 */
+	  margin-bottom: 10px; /* 이미지와 이름 사이의 간격 */
+	}
+  
+	.left-area h3, .left-area p {
+	  text-align: center; /* 이름과 설명을 중앙 정렬 */
+	  margin: 5px 0; /* 상하 간격 */
+	}
+  
+	.content-area {
+	  flex: 1; /* 남은 공간을 모두 차지 */
+	  display: flex; /* 내부 컨텐츠를 위한 flex 컨테이너 설정 */
+	  padding: 10px;
+	}
+  
+	.container.content {
+	  flex: 1; /* 남은 공간을 모두 차지하도록 설정 */
+	  display: block; /* 필요한 경우 flex 대신 block 사용 */
+	  padding-top: 6.5rem; /* 상단 패딩 추가, 필요에 따라 조정 */
+	}
+  </style>
+  
 
 <div id="main" role="main">         
-  <div class="wrap">
+  <div class="content">
     <!-- 왼쪽 구역 시작 -->
     <div class="left-area">
       <img src="{{ site.url }}/images/{{ page.image.profile }}" alt="Profile Image">
       <h3>두지수</h3>
-      <p>안녕하세요 반갑습니다. 테스트중입니다.</p>
+      <p>안녕하세요 반갑습니다. 테스트중입니다. 한 줄당 몇개의 글자가 입력 가능할까요 너무 너무 궁금하네요</p>
     </div>
     <!-- 왼쪽 구역 끝 -->
 
