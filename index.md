@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: first_page
 permalink: /
 title: "ALL POSTS"
 image:
