@@ -7,6 +7,7 @@ layout: default
 	  display: flex;
 	  flex-direction: row; /* Flex 아이템들을 가로 방향으로 배치 */
 	  width: 100%;
+	  justify-content: flex-start; /* 왼쪽 구역을 왼쪽 끝에, 내용 구역을 오른쪽에 배치 */
 	}
 	
 	.left-area {
@@ -20,7 +21,7 @@ layout: default
 	  width: 50%;
 	  border-radius: 50%; /* 이미지를 원형으로 */
 	  display: block; /* 이미지를 블록 요소로 만들어 margin을 적용 가능하게 함 */
-	  margin-bottom: 10px; /* 이미지와 이름 사이의 간격 */
+	  margin: 0 auto 10px; /* 이미지를 상하 자동으로 중앙에 배치하고, 아래에 간격 */
 	}
 	
 	.left-area h3, .left-area p {
@@ -43,25 +44,27 @@ layout: default
 
 <div id="main" role="main">         
   <div class="content">
-    <!-- 왼쪽 구역 시작 -->
-    <div class="left-area">
-      <img src="{{ site.url }}/images/{{ page.image.profile }}" alt="Profile Image">
-      <h3>두지수</h3>
-      <p>안녕하세요 반갑습니다. 테스트중입니다.</p>
-    </div>  
-    <!-- 왼쪽 구역 끝 -->
-	</div>
-    <!-- 나머지 콘텐츠 영역 시작 -->
-    <div class="content-area">
-      <div class="page-title">
-        <h1>{{ page.title }}</h1>
-        {% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
+    <div class="wrap">
+      <!-- 왼쪽 구역 시작 -->
+      <div class="left-area">
+        <img src="{{ site.url }}/images/{{ page.image.profile }}" alt="Profile Image">
+        <h3>두지수</h3>
+        <p>안녕하세요 반갑습니다. 테스트중입니다.</p>
+      </div>  
+      <!-- 왼쪽 구역 끝 -->
+      <!-- 나머지 콘텐츠 영역 시작 -->
+      <div class="content-area">
+        <div class="page-title">
+          <h1>{{ page.title }}</h1>
+          {% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
+        </div>
+        <div class="archive-wrap">
+          <div class="page-content">
+            {{ content }}
+          </div><!-- /.page-content -->
+        </div><!-- /.archive-wrap -->
       </div>
-      <div class="archive-wrap">
-        <div class="page-content">
-          {{ content }}
-        </div><!-- /.page-content -->
-      </div><!-- /.archive-wrap -->
-    </div>
-    <!-- 나머지 콘텐츠 영역 끝 -->
+      <!-- 나머지 콘텐츠 영역 끝 -->
+    </div><!-- /.wrap -->
+  </div><!-- /.content -->
 </div><!-- /#main -->
