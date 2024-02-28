@@ -5,6 +5,8 @@ permalink: /BAEKJOON/
 ---
 <div class="tiles">
 {% for post in site.posts %}
-	{% include post-grid.html %}
+	{% if post.categories contains 'BAEKJOON' %}
+    {% include post-grid.html %}
+  {% endif %}
 {% endfor %}
 </div><!-- /.tiles -->
