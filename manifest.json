@@ -1,0 +1,23 @@
+{
+    "short_name": "Dev-2mole",
+    "name": "Dev-2mole - for my record page",
+    "icons": [
+      {
+        "src": "/images/my_logo.jpg",
+        "sizes": "120x120",
+        "type": "image/jpeg"
+      },
+      {
+        "src": "/images/2mole_profile_img.jpg",
+        "sizes": "160x160",
+        "type": "image/jpeg"
+      }
+    ],
+    "start_url": "https://Dev-2mole.github.io",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "description": "Personal record and development page by 두지수(2mole)",
+    "lang": "en",
+    "theme_color": "#000000"
+  }
+  
