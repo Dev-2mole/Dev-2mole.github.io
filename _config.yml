@@ -1,13 +1,13 @@
 # Site wide configuration
 
 title: "Dev-2mole"
-description: "for my record page"
+description: "두지수(Dev-2mole) • 개발 및 공부 과정 기록 깃 블로그"
 logo: /images/my_logo.jpg # 120x120 px default image used for Twitter summary card
 teaser: /images/my_logo.jpg # 400x250 px default teaser image used in image archive grid
 locale: en
 # bundle exec jekyll serve
-# url:     http://localhost:4000
-url:   https://Dev-2mole.github.io
+url:     http://localhost:4000
+# url:   https://Dev-2mole.github.io
 feed:
   path: atom.xml
 
@@ -28,13 +28,13 @@ plugins:
 
 # Site owner
 owner:
-  name: 두지수(2mole)
+  name: 두지수(Dev-2mole)
   email: 2mole@kakao.com
   github: https://github.com/Dev-2mole
   google:
     ad-client:
     ad-slot:
-  bio:
+  bio: • 개발 및 공부 과정 기록 깃 블로그
   avatar: 2mole_profile_img.jpg # 160x160 px image for author byline
   disqus-shortname:
 
