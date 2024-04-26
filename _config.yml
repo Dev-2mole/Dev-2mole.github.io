@@ -6,8 +6,8 @@ logo: /images/my_logo.jpg # 120x120 px default image used for Twitter summary ca
 teaser: /images/my_logo.jpg # 400x250 px default teaser image used in image archive grid
 locale: en
 # bundle exec jekyll serve
-url:     http://localhost:4000
-# url:   https://Dev-2mole.github.io
+# url:     http://localhost:4000
+url:   https://Dev-2mole.github.io
 feed:
   path: atom.xml
 
