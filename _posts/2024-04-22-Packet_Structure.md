@@ -37,7 +37,7 @@ Total Size : 14 byte ( Not include Data, Checksum)
 	- Ipv6의 경우 Header Checksum을 사용하지 않음
 
 ## IP Header
-<img src="/images/pcap/ip_header.png" style= "width:400px; margin-left:10px"/>
+<img src="/images/pcap/ip_header.png" style= "width:500px; margin-left:10px"/>
 - 버전(Version) : 4 bits
 	- 4 bits : IPv4
 	- 4 bits : IPv6
@@ -75,7 +75,7 @@ Total Size : 14 byte ( Not include Data, Checksum)
 	- IP 헤더의 길이를 증가시킬 수 있는 추가적인 정보를 포함 할 수 있음 , 최대 40바이트까지 확장가능
 
 ## TCP Header
-<img src="/images/pcap/tcp_header.jpg" style= "width:400px; margin-left:10px"/>
+<img src="/images/pcap/tcp_header.png" style= "width:500px; margin-left:10px"/>
 - 출발지 포트 번호 : 2 byte
 - 도착지 포트 번호 : 2 byte
 - 전송된 순서 (Sequence number) : 4 byte
