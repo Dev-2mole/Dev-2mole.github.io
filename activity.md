@@ -1,11 +1,11 @@
 ---
 layout: archive
 title: "대외활동"
-permalink: /ACTIVITY/
+permalink: /activity/
 ---
 <div class="tiles">
 {% for post in site.posts %}
-	{% if post.categories contains 'ACTIVITY' %}
+	{% if post.categories contains 'activity' %}
     {% include post-grid.html %}
   {% endif %}
 {% endfor %}
