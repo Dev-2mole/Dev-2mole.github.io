@@ -16,12 +16,14 @@ ads: false
 social: true
 share: false
 image:
-  teaser: baekjoon_1.png
+  teaser: pcap/networkpacket.jpg
 ---
 # Packet Structure
 <img src="/images/pcap/networkpacket.jpg" style= "width:400px; margin-left:10px"/><br>
 위 그림은 TCP/IP 네트워크 패킷의 기본을 설명하는 간단한 그림이다.<br>
 Level이 의미하는 바는 OSI모델의 계층을 나타낸다.<br>
+
+
 <img src="/images/pcap/tcpdump-logical-representation.png" style= "width:400px; margin-left:10px"/><br>
 위 그림은 기본적인 네트워크 아키텍처의 모습이다.<br>
 이제 위 그림들의 패킷을 조금 넓게 펼처본다면 아래의 그림과 같아진다.<br>
