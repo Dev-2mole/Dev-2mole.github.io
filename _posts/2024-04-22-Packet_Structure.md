@@ -19,13 +19,13 @@ image:
   teaser: baekjoon_1.png
 ---
 # Packet Structure
-<img src="/images/pcap/networkpacket.jpg" style= "width:400px; margin-left:10px"/>
-위 그림은 TCP/IP 네트워크 패킷의 기본을 설명하는 간단한 그림이다.
-Level이 의미하는 바는 OSI모델의 계층을 나타낸다.
-<img src="/images/pcap/tcpdump-logical-representation.jpg" style= "width:400px; margin-left:10px"/>
+<img src="/images/pcap/networkpacket.jpg" style= "width:400px; margin-left:10px"/><br>
+위 그림은 TCP/IP 네트워크 패킷의 기본을 설명하는 간단한 그림이다.<br>
+Level이 의미하는 바는 OSI모델의 계층을 나타낸다.<br>
+<img src="/images/pcap/tcpdump-logical-representation.png" style= "width:400px; margin-left:10px"/><br>
 위 그림은 기본적인 네트워크 아키텍처의 모습이다.<br>
-이제 위 그림들의 패킷을 조금 넓게 펼처본다면 아래의 그림과 같아진다.
-<img src="/images/pcap/networkpacket_structer.jpg" style= "width:400px; margin-left:10px"/>
+이제 위 그림들의 패킷을 조금 넓게 펼처본다면 아래의 그림과 같아진다.<br>
+<img src="/images/pcap/networkpacket_structer.png" style= "width:400px; margin-left:10px"/><br>
 ## Ethernet Header
 Total Size : 14 byte ( Not include Data, Checksum)
 - 목적지 MAC 주소 (Destination Adress) : 6 byte
@@ -37,7 +37,7 @@ Total Size : 14 byte ( Not include Data, Checksum)
 	- Ipv6의 경우 Header Checksum을 사용하지 않음
 
 ## IP Header
-<img src="/images/pcap/ip_header.jpg" style= "width:400px; margin-left:10px"/>
+<img src="/images/pcap/ip_header.png" style= "width:400px; margin-left:10px"/>
 - 버전(Version) : 4 bits
 	- 4 bits : IPv4
 	- 4 bits : IPv6
