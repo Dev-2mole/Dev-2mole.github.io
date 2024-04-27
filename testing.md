@@ -10,4 +10,3 @@ permalink: /STUDY/
     {% include post-grid.html %}
   {% endif %}
 {% endfor %}
-</div><!-- /.tiles -->

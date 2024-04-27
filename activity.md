@@ -9,4 +9,4 @@ permalink: /activity/
     {% include post-grid.html %}
   {% endif %}
 {% endfor %}
-</div><!-- /.tiles -->
+
